@@ -1,3 +1,4 @@
+//Creating class with name, studentID and a public static field called member counter
 public class ExpeditionMember {
     private String name;
     private String studentID;
@@ -10,20 +11,22 @@ public class ExpeditionMember {
         member_counter++;
     }
 
-    // Getter and Setter for name
+    // Getter for name
     public String getName() {
         return name;
     }
 
+    // Setter for name
     public void setName(String name) {
         this.name = name;
     }
 
-    // Getter and Setter for studentID
+    // Getter for studentID
     public String getStudentID() {
         return studentID;
     }
 
+    //Setter for name
     public void setStudentID(String studentID) {
         this.studentID = studentID;
     }
