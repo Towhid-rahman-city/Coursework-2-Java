@@ -1,10 +1,11 @@
-//Creating class with name, studentID and a public static field called member counter
+//Creating class with name, studentID
 public class ExpeditionMember {
     private String name;
     private String studentID;
+    //Public static field called member counter
     public static int member_counter = 0;
 
-    // Constructor
+    // Constructors
     public ExpeditionMember(String name, String studentID) {
         this.name = name;
         this.studentID = studentID;
