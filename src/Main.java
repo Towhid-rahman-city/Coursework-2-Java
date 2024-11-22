@@ -1,3 +1,4 @@
+// Create class called Main
 public class Main {
     public static void main(String[] args) {
         // Initialise arrays of names and student IDs
@@ -15,7 +16,7 @@ public class Main {
         int[] mix = new int[allNames.length];
         for (int i = 0; i < allNames.length; i++) mix[i] = i;
 
-        // Mix "mix" to randomly assign names and IDs
+        // Mix "mix" array to randomly assign names and IDs so that they are in random orders
         for (int i = 0; i < mix.length; i++) {
             int j = (int) (Math.random() * mix.length);  // Get a random index
             int temp = mix[i];
@@ -23,7 +24,7 @@ public class Main {
             mix[j] = temp;
         }
 
-        // Now assign the mix members
+        // Assigning the mix members
         for (int i = 0; i < memberCount; i++) {
             members[i] = new ExpeditionMember(allNames[mix[i]], allStudentIDs[mix[i]]);
         }
@@ -38,15 +39,18 @@ public class Main {
 
 
         // Print the names of the Expedition Leader, Archivist, and Field Researcher for each expedition.
+        // Pyramid expedition printing
         System.out.println("Pyramid Expedition Core Members:");
         System.out.println("Leader is " + pyramidExpedition.getExpeditionLeaderName());
         System.out.println("Archivist is " + pyramidExpedition.getArchivistName());
         System.out.println("Field Researcher is " + pyramidExpedition.getFieldResearcherName());
 
+        // Nile expedition printing
         System.out.println("Nile Expedition Core Members:");
         System.out.println("Leader is " + nileExpedition.getExpeditionLeaderName());
         System.out.println("Archivist is " + nileExpedition.getArchivistName());
         System.out.println("Field Researcher is " + nileExpedition.getFieldResearcherName());
+
 
         // Verify member_counter
         if (ExpeditionMember.member_counter == members.length) {
@@ -54,5 +58,7 @@ public class Main {
         } else {
             System.out.println("ERROR");
         }
+
     }
+
 }

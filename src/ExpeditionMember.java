@@ -16,7 +16,6 @@ public class ExpeditionMember {
     public String getName() {
         return name;
     }
-
     // Setter for name
     public void setName(String name) {
         this.name = name;
@@ -26,9 +25,9 @@ public class ExpeditionMember {
     public String getStudentID() {
         return studentID;
     }
-
     //Setter for name
     public void setStudentID(String studentID) {
         this.studentID = studentID;
     }
+
 }
