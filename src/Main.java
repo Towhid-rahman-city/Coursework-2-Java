@@ -16,7 +16,7 @@ public class Main {
         int[] mix = new int[allNames.length];
         for (int i = 0; i < allNames.length; i++) mix[i] = i;
 
-        // Mix "mix" array to randomly assign names and IDs so that they are in random orders
+        // Rearrange the array to randomly assign names and IDs so that they are in random orders
         for (int i = 0; i < mix.length; i++) {
             int j = (int) (Math.random() * mix.length);  // Get a random index
             int temp = mix[i];
